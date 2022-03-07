@@ -1,0 +1,8 @@
+{
+"State" : {"players" : {"map" : "Player"},"roomStatus" : "RoomStatus","counter" : "Counter"},
+"Vector3" : {"x" : "number","y" : "number","z" : "number"},
+"Transform" : {"position" : "Vector3","rotation" : "Vector3"},
+"Player" : {"zepetoUserId" : "string","transform" : "Transform","state" : "number","sessionId" : "string","zepetoHash" : "string","group" : "number"},
+"RoomStatus" : {"status" : "int32"},
+"Counter" : {"target" : "int32","counter" : "int32"}
+}
