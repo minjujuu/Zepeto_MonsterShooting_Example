@@ -262,7 +262,7 @@ export default class extends Sandbox {
 
         // 방이 처음 생성되었을 경우에는 대기실로 전환
         if (this.state.roomStatus.status == this.STATUS.INIT) this.changeRoomStatus(this.STATUS.WAITING);
-        // 인원수가 맞으면 게임을 시작해보자
+        // 인원수가 맞으면 게임을 시작
         else if (this.state.roomStatus.status == this.STATUS.WAITING) {
             // 대기실이면 새로운 사람이 들어 왔을때 시작 카운트 다운을 초기화 해야함.
             this.readyCounter = 0;
@@ -273,7 +273,7 @@ export default class extends Sandbox {
         this.state.players.delete(client.sessionId);
     }
 
-    /** 랜덤수치 획득용 함수 (From. pongpong) */
+    /** 랜덤수치 획득용 함수 */
     getRandom(min: number, max: number) {
         return Math.random() * (max - min) + min;
     }
